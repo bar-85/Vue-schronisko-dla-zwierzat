@@ -13,15 +13,15 @@
 		<div class="menu-bottom">
 			<router-link class="button" to="/">
 				<span class="material-icons icons">cottage</span>
-				<span class="text">Strona główna</span>
+				<span class="text" @click="ToggleMenu" >Strona główna</span>
 			</router-link>
 			<router-link class="button" to="/pets">
 				<span class="material-icons icons">pets</span>
-				<span class="text">Nasze zwierzęta</span>
+				<span class="text" @click="ToggleMenu" >Nasze zwierzęta</span>
 			</router-link>
 			<router-link class="button" to="/contact">
 				<span class="material-icons icons">call</span>
-				<span class="text">Kontakt</span>
+				<span class="text" @click="ToggleMenu" >Kontakt</span>
 			</router-link>
 		</div>
 	</aside>
