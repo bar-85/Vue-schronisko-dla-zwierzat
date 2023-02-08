@@ -11,15 +11,15 @@
 
 		<h3>Menu</h3>
 		<div class="menu-bottom">
-			<router-link class="button" to="/">
+			<router-link class="button" to="/" @click="ToggleMenu" >
 				<span class="material-icons icons">cottage</span>
 				<span class="text">Strona główna</span>
 			</router-link>
-			<router-link class="button" to="/pets">
+			<router-link class="button" to="/pets" @click="ToggleMenu" >
 				<span class="material-icons icons">pets</span>
 				<span class="text">Nasze zwierzęta</span>
 			</router-link>
-			<router-link class="button" to="/contact">
+			<router-link class="button" to="/contact" @click="ToggleMenu" >
 				<span class="material-icons icons">call</span>
 				<span class="text">Kontakt</span>
 			</router-link>
