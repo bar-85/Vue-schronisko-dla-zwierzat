@@ -17,6 +17,7 @@
     --dark-light: #26272B;
     --blue: #007dc2;
     --blue-light:  #62c3f8; 
+    --blue-button: #62c4f818;
     --leftbar-width: 250px;
     --text-color: #ffffff;
     --border-color: #ffffff26;
