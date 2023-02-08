@@ -160,6 +160,23 @@ aside {
 	@media (max-width: 768px) {
 		position: fixed;
 		z-index: 99;
+		width: calc(2rem + 35px);
+
+		.logo {
+			margin-left: -0.3rem;
+		}
+
+		.menu-bottom {
+			.button {
+				.icons {
+					font-size: 2.1rem;;
+				}
+
+				.text {
+					font-size: 0.9rem;
+				}
+			}
+		}
 	}
 }
 </style>
