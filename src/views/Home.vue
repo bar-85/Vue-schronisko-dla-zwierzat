@@ -142,7 +142,7 @@
 			width: 100%;
 
 			.pictures {
-				margin-top: 7rem;
+				margin-top: 6rem;
 
 				.butterfly-png {
 					top: 40%;
