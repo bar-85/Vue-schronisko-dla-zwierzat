@@ -38,7 +38,10 @@
 			margin-bottom: 2rem;
 
 			span {
-				color: var(--blue);
+				background: linear-gradient(to right, var(--blue), var(--blue-light));
+				-webkit-background-clip: text;
+				background-clip: text;
+				color: transparent;
 			}
 		}
 
