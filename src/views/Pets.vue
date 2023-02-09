@@ -1,6 +1,6 @@
 <template>
 	<main class="home-page">
-		<h1>Nasi podopieczni</h1>
+		<h2>Nasi podopieczni</h2>
 		<div class="buttons">
 			<button @click="filter = 'all'">Wszystkie zwierzaki</button>
 			<button @click="filter = 'cat'">Koty</button>
@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 .home-page {
-	h1 {
+	h2 {
 		text-align: center;
 		margin-bottom: 3rem;
 		color: var(--blue);
@@ -110,8 +110,16 @@ export default {
 	}
 
 	@media (max-width: 978px) {
+		h2 {
+			font-size: 1.3rem;
+		}
+
 		.gallery {
 			grid-template-columns: repeat(2, 1fr);
+
+			p {
+				font-size: 0.9rem;
+			}
 		}
 	}
 }

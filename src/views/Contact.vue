@@ -1,7 +1,7 @@
 <template>
 	<main class="home-page">
 		<div class="box">
-			<h1>Kontakt</h1>
+			<div class="title">Kontakt</div>
 			<p>+48 123 456 78</p>
 		</div>
 	</main>
@@ -20,25 +20,15 @@
 		border-radius: 10px;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 
-		h1 {
+		.title {
 			text-transform: uppercase;
 			margin: 1rem;
+			font-size: 1.3rem;
 		}
 
 		p {
 			text-align: center;
 		}
-	}
-
-	@media (max-width: 978px) {
-	.home-page {
-	
-
-		h1 {
-			font-size: 1.1rem;
-		}
-
-	}
 	}
 }
 </style>

@@ -60,6 +60,10 @@ button {
 		@media (max-width: 978px) {
 			padding-left: 6rem;
 		}
+
+		button {
+			font-size: 0.8rem;
+		}
 	}
 }
 </style>
