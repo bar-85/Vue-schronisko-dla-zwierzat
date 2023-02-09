@@ -165,7 +165,7 @@
 					margin: 0;
 
 					.cat {
-						max-width: 20%;
+						max-width: 40%;
 						margin-left: 0;
 					}
 				}
