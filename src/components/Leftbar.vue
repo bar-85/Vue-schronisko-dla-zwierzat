@@ -13,15 +13,15 @@
 		<div class="menu-bottom">
 			<router-link class="button" to="/">
 				<span class="material-icons icons">cottage</span>
-				<span class="text" @click="ToggleMenu">Strona główna</span>
+				<span class="text" >Strona główna</span>
 			</router-link>
 			<router-link class="button" to="/pets">
 				<span class="material-icons icons">pets</span>
-				<span class="text" @click="ToggleMenu">Nasze zwierzęta</span>
+				<span class="text" >Nasze zwierzęta</span>
 			</router-link>
 			<router-link class="button" to="/contact">
 				<span class="material-icons icons">call</span>
-				<span class="text" @click="ToggleMenu">Kontakt</span>
+				<span class="text" >Kontakt</span>
 			</router-link>
 		</div>
 	</aside>
@@ -157,10 +157,14 @@ aside {
 		}
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 978px) {
 		position: fixed;
 		z-index: 99;
-		width: calc(2rem + 35px);
+		width: calc(2rem + 30px);
+
+		.menu-toggle {
+			margin-left: 2rem;
+		}
 
 		.logo {
 			margin-left: -0.3rem;
