@@ -94,7 +94,7 @@ export default {
 				&:hover {
 					transform: scale(1.1);
 					cursor: pointer;
-          transition: 0.4s ease-out;
+					transition: 0.4s ease-out;
 				}
 			}
 
@@ -103,9 +103,8 @@ export default {
 			}
 
 			.like-button {
-				background-color: var(--blue-light);
-				color: black;
-         padding: 0.7rem 1rem;
+				background-color: var(--blue-button);
+				padding: 0.7rem 1rem;
 			}
 		}
 	}
