@@ -10,11 +10,11 @@
 		</div>
 		<div class="right-side">
 			<div class="pictures">
-				<div class="cat-png">
-					<img class="cat" src="../assets/cat1.png" alt="" />
-				</div>
 				<div class="butterfly-png">
-					<img class="butterfly" src="../assets/butterfly.png" alt="" />
+					<img class="butterfly" src="../assets/butterfly.png" alt="zdjęcie motyla" />
+				</div>
+				<div class="cat-png">
+					<img class="cat" src="../assets/cat1.png" alt="zdjęcie kota" />
 				</div>
 			</div>
 		</div>
@@ -52,11 +52,6 @@
 
 		button {
 			margin-top: 2rem;
-			padding: 1rem;
-			border: 1px solid var(--blue);
-			border-radius: 10px;
-			font-weight: bold;
-			color: var(--light);
 
 			&:hover {
 				background: var(--blue-button);
@@ -73,25 +68,24 @@
 
 		.pictures {
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 
+			.cat {
+				max-width: 35%;
+				height: auto;
+				margin-left: 20%;
+			}
+
 			.butterfly-png {
-				position: absolute;
-				top: 0;
-				right: 20%;
 				animation: move-butterfly 5s infinite linear;
+				margin: 0 4rem 2rem 0;
 
 				.butterfly {
 					max-width: 90%;
 					height: auto;
 				}
-			}
-
-			.cat {
-				max-width: 35%;
-				height: auto;
-				margin: 40% 0 0 30%;
 			}
 		}
 	}
@@ -117,7 +111,15 @@
 		}
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 1150px) {
+		.left-side {
+			h1 {
+				font-size: 2.2rem;
+			}
+		}
+	}
+
+	@media (max-width: 978px) {
 		flex-direction: column;
 
 		.left-side {
@@ -126,17 +128,17 @@
 
 			h1 {
 				margin-top: 4.5rem;
-				font-size: 1.3rem;
+				font-size: 2rem;
 			}
 
 			.middle {
 				margin-top: 0rem;
-				font-size: 0.9rem;
+				font-size: 1.5rem;
 			}
 
 			.bottom {
 				margin-top: 0rem;
-				font-size: 0.7rem;
+				font-size: 1rem;
 			}
 		}
 
@@ -145,15 +147,45 @@
 			width: 100%;
 
 			.pictures {
-				margin-top: 6rem;
-
 				.butterfly-png {
-					top: 40%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin: 1rem;
 
 					.butterfly {
-						max-width: 60%;
+						max-width: 50%;
 					}
 				}
+
+				.cat-png {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin: 0;
+
+					.cat {
+						max-width: 20%;
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 478px) {
+		.left-side {
+			h1 {
+				margin-top: 8rem;
+				font-size: 1.3rem;
+			}
+
+			.middle {
+				font-size: 0.9rem;
+			}
+
+			.bottom {
+				font-size: 0.7rem;
 			}
 		}
 	}
